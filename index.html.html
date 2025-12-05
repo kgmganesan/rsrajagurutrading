@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>RSRAJAGURU TRADING (OPC) PRIVATE LIMITED - Coconut Trading India</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="RSRAJAGURU TRADING (OPC) PRIVATE LIMITED - Direct coconut buying from farmers and bulk supply to all states in India." />
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #f2f5f3;        /* light background */
+            color: #153b2c;             /* dark text – clearly visible */
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header */
+        header {
+            background: #0b8f52;
+            color: #ffffff;             /* white text on dark green – visible */
+            padding: 12px 16px;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo-text {
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+        .logo-text span {
+            display: block;
+            font-size: 0.75rem;
+            font-weight: 400;
+            opacity: 0.9;
+        }
+
+        /* Simple nav links */
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 14px;
+            font-size: 0.85rem;
+        }
+
+        nav li {
+            cursor: pointer;
+        }
+
+        nav li:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero */
+        .hero {
+            padding: 24px 16px;
+        }
+
+        .hero-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr);
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .hero-inner {
+                grid-template-columns: 1fr;
+            }
+            nav ul {
+                display: none;  /* simple mobile header */
+            }
+        }
+
+        .hero-main {
+            background: #ffffff;
+            border-radius: 16px;
+            border: 1px solid #d0e1d7;
+            padding: 18px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #e2f5ea;
+            color: #0b8f52;
+            font-size: 0.7rem;
+            padding: 4px 10px;
+            border-radius: 999px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .hero-main h1 {
+            font-size: 1.4rem;
+            margin-bottom: 6px;
+        }
+
+        .hero-sub {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .hero-highlight {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: #0b8f52;
+            color: #ffffff;
+            padding: 6px 12px;
+            font-size: 0.8rem;
+            border-radius: 999px;
+            margin-bottom: 12px;
+        }
+
+        .hero-highlight strong {
+            font-size: 0.95rem;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .btn-primary {
+            border: none;
+            border-radius: 999px;
+            padding: 9px 16px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            background: #0b8f52;
+            color: #ffffff;
+        }
+
+        .btn-outline {
+            border-radius: 999px;
+            border: 1px solid #0b8f52;
+            padding: 8px 14px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            cursor: pointer;
+            background: #ffffff;
+            color: #0b8f52;
+        }
+
+        .hero-note {
+            font-size: 0.8rem;
+            margin-top: 6px;
+            color: #315143;
+        }
+
+        .hero-side {
+            background: #ffffff;
+            border-radius: 16px;
+            border: 1px solid #d0e1d7;
+            padding: 16px;
+            font-size: 0.85rem;
+        }
+
+        .hero-side h2 {
+            font-size: 1rem;
+            margin-bottom: 8px;
+            color: #0b8f52;
+        }
+
+        .hero-side ul {
+            list-style: none;
+        }
+
+        .hero-side li {
+            margin-bottom: 4px;
+        }
+
+        .pill-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 10px;
+        }
+
+        .pill {
+            font-size: 0.7rem;
+            background: #f2f9f4;
+            border-radius: 999px;
+            padding: 4px 9px;
+        }
+
+        /* Sections */
+        section {
+            padding: 20px 16px;
+        }
+
+        .section-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 1.2rem;
+            margin-bottom: 4px;
+            color: #0b8f52;
+        }
+
+        .section-subtitle {
+            font-size: 0.85rem;
+            margin-bottom: 16px;
+            color: #415a4e;
+        }
+
+        .cards-grid {
+            display: grid;
+            gap: 14px;
+        }
+
+        @media (min-width: 768px) {
+            .cards-grid-2 {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+            .cards-grid-3 {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 14px;
+            border: 1px solid #d0e1d7;
+            padding: 14px;
+            font-size: 0.85rem;
+        }
+
+        .card h3 {
+            font-size: 1rem;
+            margin-bottom: 6px;
+            color: #14553a;
+        }
+
+        .badge-small {
+            display: inline-block;
+            background: #0b8f52;
+            color: #ffffff;
+            font-size: 0.65rem;
+            padding: 2px 8px;
+            border-radius: 999px;
+            margin-bottom: 5px;
+        }
+
+        .key-stats {
+            display: grid;
+            gap: 8px;
+            margin-top: 8px;
+        }
+
+        @media (min-width: 600px) {
+            .key-stats {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+        }
+
+        .stat {
+            background: #e4f4ea;
+            border-radius: 10px;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-weight: 700;
+            font-size: 0.95rem;
+        }
+
+        .stat-label {
+            font-size: 0.7rem;
+        }
+
+        /* Process */
+        .process-steps {
+            display: grid;
+            gap: 10px;
+        }
+
+        @media (min-width: 700px) {
+            .process-steps {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+            }
+        }
+
+        .process-step {
+            background: #ffffff;
+            border-radius: 14px;
+            border: 1px solid #d0e1d7;
+            padding: 12px;
+            font-size: 0.8rem;
+        }
+
+        .process-step h3 {
+            font-size: 0.9rem;
+            margin-bottom: 4px;
+        }
+
+        /* Contact */
+        .contact-layout {
+            display: grid;
+            gap: 14px;
+        }
+
+        @media (min-width: 800px) {
+            .contact-layout {
+                grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+            }
+        }
+
+        form {
+            background: #ffffff;
+            border-radius: 14px;
+            border: 1px solid #d0e1d7;
+            padding: 14px;
+            font-size: 0.85rem;
+        }
+
+        .field {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            font-size: 0.78rem;
+            margin-bottom: 3px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid #c2d3c8;
+            padding: 7px 9px;
+            font-size: 0.85rem;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .form-note {
+            font-size: 0.75rem;
+            margin-bottom: 8px;
+            color: #52655b;
+        }
+
+        .form-status {
+            font-size: 0.78rem;
+            margin-top: 6px;
+        }
+
+        .form-status.error {
+            color: #d63030;
+        }
+
+        .form-status.success {
+            color: #0b8f52;
+        }
+
+        .contact-card {
+            background: #ffffff;
+            border-radius: 14px;
+            border: 1px solid #d0e1d7;
+            padding: 14px;
+            font-size: 0.85rem;
+        }
+
+        .contact-item {
+            margin-bottom: 8px;
+        }
+
+        .contact-item span {
+            font-weight: 600;
+        }
+
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 7px 12px;
+            border-radius: 999px;
+            background: #25d366;
+            color: #ffffff;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-top: 6px;
+        }
+
+        .whatsapp-circle {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            border: 2px solid #ffffff;
+        }
+
+        footer {
+            background: #0b8f52;
+            color: #ffffff;
+            font-size: 0.75rem;
+            padding: 10px 16px;
+        }
+
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="nav-container">
+        <div class="logo-text">
+            RSRAJAGURU TRADING (OPC) PVT LTD
+            <span>Coconut Buying from Farmers • Pan-India Supply</span>
+        </div>
+        <nav>
+            <ul>
+                <li data-scroll="#about">About</li>
+                <li data-scroll="#products">Products</li>
+                <li data-scroll="#process">Process</li>
+                <li data-scroll="#contact">Contact</li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+    <div class="hero-inner">
+        <div class="hero-main">
+            <div class="badge">Direct from Farmers • Bulk Supply • All States in India</div>
+            <h1>Premium Coconut Supply for Traders, Oil Mills & Export Units</h1>
+            <p class="hero-sub">
+                We buy coconuts directly from farmers in Tamil Nadu and nearby belts and supply
+                bulk loads to all major markets across India.
+            </p>
+            <div class="hero-highlight">
+                Monthly Turnover Target: <strong>₹5 Crore (₹5,00,00,000)</strong>
+            </div>
+            <div class="hero-actions">
+                <button class="btn-primary" data-scroll="#contact">Bulk Enquiry</button>
+                <button class="btn-outline" data-scroll="#products">View Grades & Use</button>
+            </div>
+            <p class="hero-note">
+                Tamil: <em>“உழவரிடமிருந்து நேரடி கொள்முதல் – இந்தியா முழுவதும் தரமான தென்னை விநியோகம்”</em>
+            </p>
+        </div>
+
+        <div class="hero-side">
+            <h2>Company Details</h2>
+            <ul>
+                <li><strong>Company Name:</strong> RSRAJAGURU TRADING (OPC) PRIVATE LIMITED</li>
+                <li><strong>CIN:</strong> U01632TZ2025OPC036724</li>
+                <li><strong>Address:</strong><br>
+                    C/O NATARAJAN, SERANGADU THOTTAM TIRUPUR,<br>
+                    Muthanampalayam, Tirupur, Coimbatore – 641606,<br>
+                    Tamil Nadu, India.
+                </li>
+                <li><strong>Email:</strong> rsgurutrading@atomicmail.io</li>
+                <li><strong>Mobile / WhatsApp:</strong> +91-90877 14663</li>
+            </ul>
+            <div class="pill-row">
+                <span class="pill">Farmer-First Pricing</span>
+                <span class="pill">Bulk Loads Only</span>
+                <span class="pill">Pan-India Logistics</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="section-inner">
+        <h2 class="section-title">About RSRAJAGURU TRADING</h2>
+        <p class="section-subtitle">
+            A dedicated coconut trading company based in Tirupur, Tamil Nadu, building a strong bridge
+            between genuine farmers and reliable bulk buyers across India.
+        </p>
+
+        <div class="cards-grid cards-grid-2">
+            <div class="card">
+                <h3>Our Focus</h3>
+                <p>
+                    We specialise in buying fresh mature coconuts directly from farmers, farmer groups,
+                    and local mandis in key coconut-growing locations.
+                </p>
+                <p>
+                    Our clients include wholesale traders, oil mills, copra makers, desiccated coconut units,
+                    supermarkets and export houses.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Turnover & Capacity</h3>
+                <p>
+                    Targeting a <strong>monthly turnover of ₹5 Crore</strong> with regular loads,
+                    transparent dealings and stable long-term partnerships.
+                </p>
+                <div class="key-stats">
+                    <div class="stat">
+                        <div class="stat-value">₹5 Cr</div>
+                        <div class="stat-label">Monthly Target</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">All States</div>
+                        <div class="stat-label">Supply Coverage</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">Bulk Only</div>
+                        <div class="stat-label">Trucks / Containers</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+    <div class="section-inner">
+        <h2 class="section-title">Products & Grades</h2>
+        <p class="section-subtitle">
+            We supply different coconut grades based on usage – retail, oil extraction, copra,
+            desiccated coconut and more.
+        </p>
+
+        <div class="cards-grid cards-grid-3">
+            <div class="card">
+                <div class="badge-small">Fresh Coconuts</div>
+                <h3>Husked / Semi-Husked</h3>
+                <p>For retail, temple and general market supply.</p>
+                <ul style="padding-left:18px; font-size:0.8rem; margin-top:6px;">
+                    <li>Small / Medium / Big size</li>
+                    <li>Clean, sorted lots</li>
+                    <li>Gunny / PP bag packing</li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="badge-small">Industrial</div>
+                <h3>Oil Mill & Copra Grade</h3>
+                <p>For oil mills, copra units and desiccated units.</p>
+                <ul style="padding-left:18px; font-size:0.8rem; margin-top:6px;">
+                    <li>High oil content coconuts</li>
+                    <li>Bulk loading and clear weight</li>
+                    <li>Farmer-based competitive rates</li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="badge-small">On Demand</div>
+                <h3>Tender Coconuts</h3>
+                <p>Subject to season and prior booking.</p>
+                <ul style="padding-left:18px; font-size:0.8rem; margin-top:6px;">
+                    <li>For juice shops, events</li>
+                    <li>Bulk quantity bookings only</li>
+                    <li>Region-wise sourcing</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+    <div class="section-inner">
+        <h2 class="section-title">Simple Supply Process</h2>
+        <p class="section-subtitle">Clear steps from enquiry to delivery.</p>
+
+        <div class="process-steps">
+            <div class="process-step">
+                <h3>1. Enquiry</h3>
+                <p>Buyer shares requirement – quantity, size, usage, delivery location and date.</p>
+            </div>
+            <div class="process-step">
+                <h3>2. Rate Offer</h3>
+                <p>We check farmer prices & transport and give best bulk rate with terms.</p>
+            </div>
+            <div class="process-step">
+                <h3>3. Procurement</h3>
+                <p>Coconuts are procured from farmers, sorted, counted and packed.</p>
+            </div>
+            <div class="process-step">
+                <h3>4. Dispatch</h3>
+                <p>Truck/container is loaded, details shared and material sent to buyer.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="section-inner">
+        <h2 class="section-title">Bulk Enquiry Form</h2>
+        <p class="section-subtitle">For genuine truck / container load enquiries across India.</p>
+
+        <div class="contact-layout">
+            <!-- FORM -->
+            <form id="enquiryForm" novalidate>
+                <div class="form-note">Fields marked * are mandatory.</div>
+
+                <div class="field">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" placeholder="Your full name" required>
+                </div>
+                <div class="field">
+                    <label for="company">Company / Firm</label>
+                    <input type="text" id="company" placeholder="Your company name">
+                </div>
+                <div class="field">
+                    <label for="phone">Mobile / WhatsApp *</label>
+                    <input type="tel" id="phone" placeholder="Contact number" required>
+                </div>
+                <div class="field">
+                    <label for="state">Delivery State *</label>
+                    <select id="state" required>
+                        <option value="">Select State</option>
+                        <option>Tamil Nadu</option>
+                        <option>Karnataka</option>
+                        <option>Kerala</option>
+                        <option>Andhra Pradesh</option>
+                        <option>Telangana</option>
+                        <option>Maharashtra</option>
+                        <option>Gujarat</option>
+                        <option>Rajasthan</option>
+                        <option>Delhi / NCR</option>
+                        <option>West Bengal</option>
+                        <option>Odisha</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="quantity">Required Quantity (approx.) *</label>
+                    <input type="text" id="quantity" placeholder="e.g. 18 MT / 20,000 nuts" required>
+                </div>
+                <div class="field">
+                    <label for="usage">Usage *</label>
+                    <select id="usage" required>
+                        <option value="">Select Usage</option>
+                        <option>Retail / Market</option>
+                        <option>Oil Mill / Copra</option>
+                        <option>Desiccated Coconut Unit</option>
+                        <option>Temple Supply</option>
+                        <option>Export</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="message">Additional Details</label>
+                    <textarea id="message" placeholder="Any special size / grade / packing requirement"></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary">Submit Enquiry</button>
+                <div id="formStatus" class="form-status" aria-live="polite"></div>
+            </form>
+
+            <!-- CONTACT INFO -->
+            <div class="contact-card">
+                <h3>Contact & Registered Office</h3>
+                <div class="contact-item">
+                    <span>RSRAJAGURU TRADING (OPC) PRIVATE LIMITED</span><br>
+                    C/O NATARAJAN, SERANGADU THOTTAM TIRUPUR,<br>
+                    Muthanampalayam, Tirupur,<br>
+                    Coimbatore – 641606, Tamil Nadu, India.
+                </div>
+                <div class="contact-item">
+                    <span>Mobile / WhatsApp:</span> +91-90877 14663
+                </div>
+                <div class="contact-item">
+                    <span>Email:</span> rsgurutrading@atomicmail.io
+                </div>
+
+                <a class="whatsapp-btn" href="https://wa.me/919087714663?text=Hi%20RSRAJAGURU%20TRADING%2C%20I%20am%20interested%20in%20bulk%20coconut%20supply" target="_blank" rel="noopener">
+                    <div class="whatsapp-circle"></div>
+                    WhatsApp Enquiry
+                </a>
+
+                <p style="font-size:0.78rem; margin-top:8px;">
+                    Working Hours: 9:00 AM – 7:00 PM (IST), Monday to Saturday.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-inner">
+        <div>© <span id="year"></span> RSRAJAGURU TRADING (OPC) PRIVATE LIMITED. All rights reserved.</div>
+        <div>CIN: U01632TZ2025OPC036724 • Tirupur, Tamil Nadu</div>
+    </div>
+</footer>
+
+<script>
+    // smooth scroll
+    document.querySelectorAll("[data-scroll]").forEach(function (item) {
+        item.addEventListener("click", function () {
+            var target = document.querySelector(this.getAttribute("data-scroll"));
+            if (target) {
+                window.scrollTo({
+                    top: target.offsetTop - 70,
+                    behavior: "smooth"
+                });
+            }
+        });
+    });
+
+    // dynamic year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // simple form validate
+    const form = document.getElementById("enquiryForm");
+    const statusEl = document.getElementById("formStatus");
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        statusEl.textContent = "";
+        let error = false;
+
+        const required = ["name", "phone", "state", "quantity", "usage"];
+        required.forEach(id => {
+            const el = document.getElementById(id);
+            if (!el.value.trim()) {
+                error = true;
+                el.style.borderColor = "#d63030";
+            } else {
+                el.style.borderColor = "#c2d3c8";
+            }
+        });
+
+        if (error) {
+            statusEl.textContent = "Please fill all required fields (*) correctly.";
+            statusEl.className = "form-status error";
+            return;
+        }
+
+        statusEl.textContent = "Thank you. We will contact you with current rates and availability.";
+        statusEl.className = "form-status success";
+        form.reset();
+    });
+</script>
+
+</body>
+</html>
